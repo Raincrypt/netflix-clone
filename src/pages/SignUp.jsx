@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { signUpBgImage } from "../constants/constants";
+import { signUpBgImage, helpLink } from "../constants/constants";
 
 import Button from "../components/Button";
 import { Link, useNavigate } from "react-router-dom";
@@ -74,10 +74,10 @@ const SignUp = () => {
                     <input className="mr-2" type="checkbox" name="" id="" />
                     Remember Me
                   </p>
-                  <p>Need Help?</p>
+                  <a href={helpLink} target='_blank'>Need Help?</a>
                 </div>
                 <p className="py-4 text-gray-600">
-                  Already Subscribed to Netflix?{" "}
+                  Already Subscribed to Netflix?
                   <span className="text-bold text-red-600">
                     <Link to={"/login"}>Sign In</Link>
                   </span>

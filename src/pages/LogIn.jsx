@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
-import { signUpBgImage } from "../constants/constants";
+import { signUpBgImage, helpLink } from "../constants/constants";
 import AuthContext from "../context/AuthContext";
 
 import Button from "../components/Button";
@@ -81,10 +81,10 @@ const LogIn = () => {
                     <input className="mr-2" type="checkbox" name="" id="" />
                     Remember Me
                   </p>
-                  <p>Need Help?</p>
+                  <a href={helpLink} target='_blank'>Need Help?</a>
                 </div>
                 <p className="py-4 text-gray-600">
-                  New to Netflix?{" "}
+                  New to Netflix?
                   <span className="text-bold text-red-600">
                     <Link to={"/signup"}>Sign Up</Link>
                   </span>
