@@ -1,4 +1,4 @@
-const key = process.env.VITE_IMDB_API_KEY;
+const key = "b2233e4f5900d29462e0b77b45224a7f";
 
 const requests = {
   requestPopular: `https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=en-US&page=1`,
